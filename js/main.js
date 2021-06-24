@@ -19,3 +19,21 @@ modalBtn.addEventListener('click', () => {
 modalClose.addEventListener('click', () => {
     modalWrapper.classList.remove('show')
 })
+
+console.log('>>>')
+
+const firstBtn = document.querySelector('.btn1')
+const secondBtn = document.querySelector('.btn2')
+const modalClose = document.querySelector('.modal-close')
+
+
+firstBtn.addEventListener('click', (e) => {
+    setActive(e)
+    console.log('<<<')
+})
+
+
+function setActive(e) {
+    e.target.classList.add('active')
+
+}
