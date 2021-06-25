@@ -3,6 +3,9 @@ $(document).ready(function() {
         items: 1, /*то еоличество, которых можно увидеть*/
         loop: true,
         margin: 214,
+        320: {
+            items: 1
+        }
 
     })
 });
@@ -20,20 +23,18 @@ modalClose.addEventListener('click', () => {
     modalWrapper.classList.remove('show')
 })
 
-console.log('>>>')
 
-const firstBtn = document.querySelector('.btn1')
-const secondBtn = document.querySelector('.btn2')
-const modalClose = document.querySelector('.modal-close')
+const buttons = document.querySelector('.btn1')
+const second = document.querySelector('.btn2')
 
+buttons.addEventListener('click', (e) => {
+    second.classList.remove('active')
+    e.target.classList.add('active')
+})
 
-firstBtn.addEventListener('click', (e) => {
-    setActive(e)
-    console.log('<<<')
+second.addEventListener('click', (e) =>  {
+    buttons.classList.remove('active')
+    e.target.classList.add('active')
 })
 
 
-function setActive(e) {
-    e.target.classList.add('active')
-
-}
