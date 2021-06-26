@@ -483,7 +483,7 @@
 @media (max-width: 768px) {  /* 481 - 768 */
     .container {
         max-width: 491px;
-        padding: 0 25px 15px 37px;
+        padding: 0 0 15px 12px;
         display: block;
     }
     .header__logo {
