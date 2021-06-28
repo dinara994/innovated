@@ -722,9 +722,9 @@ h1, h2, h3, h4, h5, h6 {
     background: transparent;
 }
 
+
+
 .plan__btn-bl {
-    width: 170px;
-    height: 49px;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 18px;
@@ -734,6 +734,11 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
 }
 
+
+.remove {
+    background: white;
+
+}
 .plan__row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -822,16 +827,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.plan__btn {
+.plan__btn-bl {
     font-size: 18px;
     line-height: 160%;
-    border-radius: 5px;
-    padding: 10px 20px;
-    color: #FFFFFF;
-    background: #3988FF;
+    color: #575859;
     border: none;
-    display: inline-block;
-    margin-top: 15px;
+    background: transparent;
 }
 
 .plan__main-pink {
@@ -852,18 +853,22 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 9px;
     border-radius: 10px;
     padding: 2px 6px 4px;
-
     top: -38px;
     left: 20px;
     position: relative;
-
     color: black;
 }
 
-/*    line-height: 160%;*/
-/*    color: #050C26;*/
-/*    transform: rotate(-45deg);*/
-
+.topical {
+    font-size: 18px;
+    line-height: 160%;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    background: #3988FF;
+    border: none;
+    display: inline-block;
+}
 /*---------------PLAN-------------*/
 /*---------------CLIENTS-------------*/
 
@@ -962,11 +967,14 @@ h1, h2, h3, h4, h5, h6 {
     background: #ecf3ff;
     border-radius: 20px;
 }
+.active{
+    background: #3988FF;
+}
 
 .owl-theme .owl-dots .owl-dot.active span {
     width: 40px;
     height: 11px;
-    /*background: #3988FF;*/
+    background: #3988FF;
     border-radius: 20px;
 }
 
@@ -978,8 +986,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 75px 0 30px;
     background: #050C26;
     color: #FFFFFF;
-
-
 }
 
 .footer__container {
@@ -1057,10 +1063,3 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 25px;
 }
 
-.active {
-    background: white;
-}
-
-.remove {
-    background: #3988FF;
-}

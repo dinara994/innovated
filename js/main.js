@@ -28,13 +28,13 @@ const buttons = document.querySelector('.btn1')
 const second = document.querySelector('.btn2')
 
 buttons.addEventListener('click', (e) => {
-    second.classList.remove('active')
-    e.target.classList.add('active')
+    second.classList.remove('topical')
+    e.target.classList.add('topical')
 })
 
 second.addEventListener('click', (e) =>  {
-    buttons.classList.remove('active')
-    e.target.classList.add('active')
+    buttons.classList.remove('topical')
+    e.target.classList.add('topical')
 })
 
 
